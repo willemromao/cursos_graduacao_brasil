@@ -2,7 +2,7 @@
 
 :game_die: **Dataset:** [Clique aqui](https://dadosabertos.mec.gov.br/indicadores-sobre-ensino-superior/item/183-cursos-de-graduacao-do-brasil)
 
-**Notebook no Google Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yCHmQk89jnFskhuW80OsPiL4lkmY1uyh?usp=sharing)
+:orange_book: **Notebook no Google Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yCHmQk89jnFskhuW80OsPiL4lkmY1uyh?usp=sharing)
 
 :page_facing_up: **Relatório:** [Clique aqui](Relatório.pdf)
 
