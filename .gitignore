@@ -2,4 +2,4 @@
 .virtual_documents/
 
 *.csv
-model.joblib
+*.joblib
