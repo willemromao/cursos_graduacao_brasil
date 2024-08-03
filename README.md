@@ -2,12 +2,18 @@
 
 :game_die: **Dataset:** [Clique aqui](https://dadosabertos.mec.gov.br/indicadores-sobre-ensino-superior/item/183-cursos-de-graduacao-do-brasil)
 
-:orange_book: **Notebook no Google Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yCHmQk89jnFskhuW80OsPiL4lkmY1uyh?usp=sharing)
+:orange_book: **Notebook das análises no Google Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yCHmQk89jnFskhuW80OsPiL4lkmY1uyh?usp=sharing)
 
-:page_facing_up: **Relatório:** [Clique aqui](Relatório.pdf)
+:orange_book: **Notebook do modelo de classificação no Google Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cjlIiSwz_iGcU3cjy_JEaBgSwOyiqs9g?usp=sharing)
 
-:tv: **Slide:** [Clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+:page_facing_up: **Relatório das análises:** [Clique aqui](Relatório - Análises.pdf)
+
+:page_facing_up: **Relatório do modelo de classificação:** [Clique aqui](Relatório - Modelo de Classificação.pdf)
+
+:tv: **Slide das análises:** [Clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+:tv: **Slide do modelo de classificação:** [Clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Resumo
 
-Este projeto apresenta uma análise detalhada dos cursos de graduação no Brasil, utilizando dados extraı́dos da página de Dados Abertos do Ministério da Educação. O processo incluiu etapas de pré-processamento, como identificação e tratamento de outliers e ruı́dos. A análise abrangeu a distribuição dos cursos por região, perfil por modalidade de ensino e situação dos cursos. Os resultados mostram uma maior concentração de cursos na região Sudeste e uma predominância de cursos a distância. A maioria dos cursos estão em atividade, com uma menor proporção em extinção ou extintos. A análise final foi focada nos cursos de Tecnologia da Informação, refletindo a importância da tecnologia nos dias atuais. Este estudo fornece uma visão abrangente da oferta de cursos de graduação no Brasil e encaminha para futuros trabalhos, como a identificação de clusters de cursos com caracterı́sticas semelhantes e/ou a classificação do risco de extinção.
+Este projeto apresenta os resultados das análises e do modelo obtidos a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises a descoberta mais impactante foi que organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo, dos três agoritmos de classificação testados (Árvore de Decisão, Florestas Aleatórias, Perceptron de Múltiplas Camadas), foi obtido 81% de acurácia com Florestas Aleatórias.
