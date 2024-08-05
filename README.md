@@ -2,7 +2,7 @@
 
 ## Resumo
 
-Este projeto apresenta os resultados das análises e do modelo feito a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises, a descoberta mais impactante foi que, organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo que classifica extinção de cursos, dos três algoritmos de classificação testados (Árvore de Decisão, Florestas Aleatórias e Perceptron de Múltiplas Camadas), o que melhor performou foi o Florestas Aleatórias com 81% de acurácia.
+Este projeto apresenta os resultados das análises e do modelo feito a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises, a descoberta mais impactante foi que, organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo que classifica extinção de cursos, dos três algoritmos testados (Árvore de Decisão, Florestas Aleatórias e Perceptron de Múltiplas Camadas), o que melhor performou foi o Florestas Aleatórias com 81% de acurácia.
 
 ## Arquivos
 
@@ -13,9 +13,9 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
     - Modelo de classificação: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cjlIiSwz_iGcU3cjy_JEaBgSwOyiqs9g?usp=sharing)
 
 - :page_facing_up: **Relatórios:**
-    - Análises dos cursos: [clique aqui](/Relatório%20-%20Análises.pdf).
+    - Análises dos cursos: [clique aqui](/relatorios/Relatório%20-%20Análises.pdf).
     - Modelo de classificação: [clique aqui](/relatorios/Relatório%20-%20Modelo.pdf).
 
 - :tv: **Slides:**
     - Análises dos cursos: [clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
-    - Modelo de classificação: [clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+    - Modelo de classificação: [clique aqui](https://www.canva.com/design/DAGNBlGP3sk/9q8C1uXdTLg0E2j_212i7g/edit?utm_content=DAGNBlGP3sk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
