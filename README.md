@@ -19,3 +19,12 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
 - :tv: **Slides:**
     - Análises dos cursos: [clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
     - Modelo de classificação: [clique aqui](https://www.canva.com/design/DAGNBlGP3sk/9q8C1uXdTLg0E2j_212i7g/edit?utm_content=DAGNBlGP3sk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+
+## Próximos passos
+
+- Disponibilizar o modelo para uso geral na web através de uma API, onde o usuário poderá interagir de forma fácil e intuitiva.
+- Colocar o modelo em produção usando MLOps e fazer o retreinamento sempre que o dataset for atualizado pelo MEC.
+
+## Observações
+
+Cometi um pequeno equívoco na parte das análises (projeto 1), onde acabo utilizando imputação de dados na parte de tratamento de outliers, o correto seria fazer a remoção dos outliers usando IQR, por exemplo. O que aconteceu foi que eu me confundi tratando outliers com uma técnica de tratamento de valores ausentes. Em breve isso será resolvido.
