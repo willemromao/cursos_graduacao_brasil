@@ -1,4 +1,6 @@
-# Cursos de Graduação Brasil
+# Cursos de Graduação Brasil 
+
+![logo-mec](/imgs/MECAssinatura.png)
 
 ## Resumo
 
