@@ -2,7 +2,7 @@
 
 ## Resumo
 
-Este projeto apresenta os resultados das análises e do modelo feito a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises, a descoberta mais impactante foi que, organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo, dos três algoritmos de classificação testados (Árvore de Decisão, Florestas Aleatórias, Perceptron de Múltiplas Camadas), o que melhor performou foi o Florestas Aleatórias com 81% de acurácia.
+Este projeto apresenta os resultados das análises e do modelo feito a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises, a descoberta mais impactante foi que, organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo que classifica extinção de cursos, dos três algoritmos de classificação testados (Árvore de Decisão, Florestas Aleatórias e Perceptron de Múltiplas Camadas), o que melhor performou foi o Florestas Aleatórias com 81% de acurácia.
 
 ## Arquivos
 
