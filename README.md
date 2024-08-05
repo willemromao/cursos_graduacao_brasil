@@ -23,7 +23,7 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
 ## Próximos passos
 
 - Disponibilizar o modelo para uso geral na web através de uma API, onde o usuário poderá interagir de forma fácil e intuitiva.
-- Colocar o modelo em produção usando MLOps e fazer o retreinamento sempre que o dataset for atualizado pelo MEC.
+- Colocar o modelo em produção usando MLOps e fazer o retreinamento sempre que o dataset for atualizado pelo Ministério da Educação.
 
 ## Observações
 
