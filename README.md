@@ -1,8 +1,6 @@
 # Cursos de Graduação Brasil 
 
-![logo-mec](/imgs/MECAssinatura.png)
-
-<img src="/imgs/MECAssinatura.png" alt="Logo MEC" width="100" height="50">
+<img src="/imgs/MECAssinatura.png" alt="Logo MEC" width="475" height="175">
 
 
 ## Resumo
