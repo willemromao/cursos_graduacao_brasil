@@ -17,7 +17,7 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
 
 - :page_facing_up: **Relatórios:**
     - Análises dos cursos: [clique aqui](/relatorios/Relatório%20-%20Análises.pdf).
-    - Modelo de classificação: [clique aqui](/relatorios/Relatório%20-%20Modelo.pdf).
+    - Modelo de classificação: [clique aqui](/relatorios/Relatório%20-%20Modelo%20de%20Classificação.pdf).
 
 - :tv: **Slides:**
     - Análises dos cursos: [clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
