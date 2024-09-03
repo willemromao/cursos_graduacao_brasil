@@ -1,0 +1,26 @@
+services:  # Define os serviços que serão executados em containers.
+
+  flask-api:  # Nome do serviço para a API Flask.
+    build:  # Instruções para construir a imagem Docker para este serviço.
+      context: ./app  # Diretório onde está o Dockerfile e o restante dos arquivos para construir a imagem da API Flask.
+    ports:  # Mapeia as portas do container para o host.
+      - "5000:5000"  # Mapeia a porta 5000 do container para a porta 5000 do host.
+    volumes:  # Define os volumes montados no container.
+      - ./app/model:/app/model  # Mapeia o diretório local `./app/model` para o diretório `/app/model` dentro do container.
+    networks:  # Define a rede na qual o serviço estará conectado.
+      - app-network  # Conecta o serviço à rede `app-network`.
+
+  streamlit-app:  # Nome do serviço para a aplicação Streamlit.
+    build:  # Instruções para construir a imagem Docker para este serviço.
+      context: ./streamlit  # Diretório onde está o Dockerfile e o restante dos arquivos para construir a imagem da aplicação Streamlit.
+    ports:  # Mapeia as portas do container para o host.
+      - "8501:8501"  # Mapeia a porta 8501 do container para a porta 8501 do host.
+    depends_on:  # Define a ordem de inicialização dos serviços.
+      - flask-api  # Garante que o serviço `flask-api` seja iniciado antes do serviço `streamlit-app`.
+    networks:  # Define a rede na qual o serviço estará conectado.
+      - app-network  # Conecta o serviço à rede `app-network`.
+
+networks:  # Define as redes que os serviços usarão.
+  app-network:  # Nome da rede.
+    driver: bridge  # Tipo de driver da rede. `bridge` é o driver padrão que cria uma rede isolada.
+
