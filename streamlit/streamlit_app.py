@@ -42,7 +42,7 @@ if st.button("Obter previsão"):
         "CARGA_HORARIA": carga_horaria
     }
 
-    url = "http://127.0.0.1:5000/predict"
+    url = "http://flask-api:5000/predict"
 
     response = requests.post(url, json=input_data)
 

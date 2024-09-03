@@ -6,10 +6,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Carregando o modelo, scaler, encoder e label encoder salvos
-model = joblib.load('/home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/app/model/model.joblib')
-scaler = joblib.load('/home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/app/model/scaler.joblib')
-encoder = joblib.load('/home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/app/model/encoder.joblib')
-label_encoder = joblib.load('/home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/app/model/label_encoder.joblib')
+model = joblib.load('/app/model/model.joblib')
+scaler = joblib.load('/app/model/scaler.joblib')
+encoder = joblib.load('/app/model/encoder.joblib')
+label_encoder = joblib.load('/app/model/label_encoder.joblib')
 
 # Definindo as colunas que foram codificadas e normalizadas
 categorical_features = ['CATEGORIA_ADMINISTRATIVA', 'ORGANIZACAO_ACADEMICA', 'GRAU', 'MODALIDADE', 'REGIAO']
@@ -52,4 +52,5 @@ def predict():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
