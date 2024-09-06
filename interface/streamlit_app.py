@@ -42,7 +42,7 @@ if st.button("Obter previsão"):
         "CARGA_HORARIA": carga_horaria
     }
 
-    url = "http://app:5000/predict"
+    url = "http://api:5000/predict"
 
     response = requests.post(url, json=input_data)
 
