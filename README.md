@@ -23,9 +23,24 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
     - Análises dos cursos: [clique aqui](https://www.canva.com/design/DAGIb1KG7w4/agkKoljdXxc0T6Pu4ltI2Q/edit?utm_content=DAGIb1KG7w4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
     - Modelo de classificação: [clique aqui](https://www.canva.com/design/DAGNBlGP3sk/9q8C1uXdTLg0E2j_212i7g/edit?utm_content=DAGNBlGP3sk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
-## Próximos passos
+## :whale: Rode meu modelo com Docker 
 
-- Disponibilizar o modelo para uso geral na web através de uma API, onde o usuário poderá interagir de forma fácil e intuitiva.
+1. Faça o download do repositório via `git clone`.
+
+2. Uma vez que você tenha o Docker e o Compose devidamente instalado, dentro da pasta raíz do projeto digite o seguinte comando no terminal:
+
+```shell
+docker compose up --build
+```
+3. Acesse o navegador e digite na barra de endereços:
+
+```
+https:\\localhost:8501
+```
+
+
+## Futuras features
+
 - Colocar o modelo em produção usando MLOps e fazer o retreinamento sempre que o dataset for atualizado pelo Ministério da Educação.
 
 ## Observações
