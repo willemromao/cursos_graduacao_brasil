@@ -25,7 +25,7 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
 
 ## :whale: Rode meu modelo com Docker 
 
-<img src="/imgs/Fluxograma.png" alt="Fluxograma" width="475" height="175">
+<img src="/imgs/Fluxograma.png" alt="Fluxograma" width="700" height="350">
 
 1. Faça o download do repositório via `git clone`.
 
