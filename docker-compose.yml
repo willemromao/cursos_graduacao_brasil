@@ -1,10 +1,14 @@
 services:
-  app:
+  api:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ./api
     ports:
-      - "5000:5000"  # Porta do Flask API
-      - "8501:8501"  # Porta do Streamlit
-    volumes:
-      - ./app:/app
+      - "5000:5000"
+  
+  interface:
+    build:
+      context: ./interface
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
