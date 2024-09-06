@@ -25,6 +25,8 @@ Este projeto apresenta os resultados das análises e do modelo feito a partir de
 
 ## :whale: Rode meu modelo com Docker 
 
+<img src="/imgs/Fluxograma.png" alt="Fluxograma" width="475" height="175">
+
 1. Faça o download do repositório via `git clone`.
 
 2. Uma vez que você tenha o Docker e o Compose devidamente instalado, dentro da pasta raíz do projeto digite o seguinte comando no terminal:
