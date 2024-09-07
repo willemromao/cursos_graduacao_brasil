@@ -40,11 +40,11 @@ docker compose up --build
 https:\\localhost:8501
 ```
 
+<img src="/imgs/screenshot1.png" alt="Fluxograma" width="700" height="350">
+
+<img src="/imgs/screenshot2.png" alt="Fluxograma" width="700" height="350">
+
 
 ## Futuras features
 
 - Colocar o modelo em produção usando MLOps e fazer o retreinamento sempre que o dataset for atualizado pelo Ministério da Educação.
-
-## Observações
-
-Cometi um pequeno equívoco na parte das análises (projeto 1), onde acabo utilizando imputação de dados na parte de tratamento de outliers, o correto seria fazer a remoção dos outliers usando IQR, por exemplo. O que aconteceu foi que eu me confundi tratando outliers com uma técnica de tratamento de valores ausentes. Em breve isso será resolvido.
