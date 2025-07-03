@@ -3,4 +3,6 @@
 venv/
 
 *.csv
+*.pkl
+*.joblib
 
