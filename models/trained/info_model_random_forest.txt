@@ -1,6 +1,6 @@
 ===== INFORMAÇÕES DO MODELO =====
 Modelo: Random Forest
-Data de treinamento: 2025-07-02 23:22:17
+Data de treinamento: 2025-07-03 17:55:51
 
 Métricas de desempenho:
   acuracia: 0.8495
@@ -10,7 +10,7 @@ Métricas de desempenho:
   auc: 0.9197
 
 CV AUC: 0.9169 (±0.0010)
-Tempo de execução: 5.22 segundos
+Tempo de execução: 5.77 segundos
 
 Melhores hiperparâmetros:
   modelo__n_estimators: 50
@@ -18,7 +18,7 @@ Melhores hiperparâmetros:
   modelo__min_samples_leaf: 1
   modelo__max_depth: 10
 
-Run ID MLflow: e92e254aaf8a48c6af9c3c50644005fe
+Run ID MLflow: 5db31272b5aa426f82482895d6d438b4
 
 Distribuição das classes:
   Classe 0 (Não Extinto): 44746

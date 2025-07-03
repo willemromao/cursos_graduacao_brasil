@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/5db31272b5aa426f82482895d6d438b4/artifacts
+end_time: 1751576141703
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: 5db31272b5aa426f82482895d6d438b4
+run_name: Random Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751575972838
+status: 3
+tags: []
+user_id: willemromao

@@ -21,16 +21,10 @@ try:
     model = joblib.load(MODEL_PATH)
     with open(PREPROCESSOR_PATH, "rb") as f:
         preprocessor = pickle.load(f)
-    
-    # pré-compute máscara para remover todas as colunas de EXTINTO após o transform
-    feature_names = preprocessor.get_feature_names_out()
-    extinto_mask = ['EXTINTO' not in name for name in feature_names]
-
 except Exception as e:
     print(f"Erro ao carregar modelo ou preprocessor: {e}")
     model = None
     preprocessor = None
-    extinto_mask = None
 
 class CourseInput(BaseModel):
     GRAU: str = Field(..., example="Tecnológico")
@@ -62,21 +56,9 @@ async def health_check():
         "preprocessor_loaded": preprocessor is not None
     }
 
-@app.get("/info")
-async def model_info():
-    try:
-        return {
-            "model_type": "Random Forest",
-            "variavel_alvo": "EXTINTO (Sim/Não)",
-            "input_features": list(CourseInput.__fields__.keys()),
-            "processed_features": preprocessor.get_feature_names_out().tolist()
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Falha ao obter informações: {e}")
-
 @app.post("/predict", response_model=ExtinctionPrediction)
 async def predict(course: CourseInput):
-    if model is None or preprocessor is None or extinto_mask is None:
+    if model is None or preprocessor is None:
         raise HTTPException(
             status_code=500,
             detail="Modelo ou preprocessor não foi carregado corretamente."
@@ -84,19 +66,10 @@ async def predict(course: CourseInput):
 
     try:
         input_df = pd.DataFrame([course.dict()])
-
-        # Mantém o dummy 'EXTINTO' apenas para satisfazer o preprocessor
-        input_df["EXTINTO"] = "Não"
-
-        # Aplica o pré-processamento
-        transformed_df = pd.DataFrame(transformed, columns=feature_names)
-        X_for_model = transformed_df.loc[:, extinto_mask]
-
-        # Remove todas as colunas geradas para EXTINTO antes de alimentar o modelo
-        X_for_model = transformed[:, extinto_mask]
-
-        # Faz a predição com o modelo
-        proba = model.predict_proba(X_for_model)[0][1]
+        
+        transformed = preprocessor.transform(input_df)
+        
+        proba = model.predict_proba(transformed)[0][1]
         pred_label = "Sim" if proba >= 0.5 else "Não"
 
         return ExtinctionPrediction(
@@ -105,7 +78,7 @@ async def predict(course: CourseInput):
         )
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro ao processar a predição: {e}")
+        raise HTTPException(status_code=500, detail=f"Erro ao processar a predição: {str(e)}")
 
 if __name__ == "__main__":
     uvicorn.run("api:app", host="0.0.0.0", port=8000)
