@@ -1,14 +1,20 @@
+version: "3.9"
+
 services:
   api:
     build:
-      context: ./api
+      context: app/api           
+      dockerfile: Dockerfile   
     ports:
-      - "5000:5000"
-  
-  interface:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models 
+
+  ui:
     build:
-      context: ./interface
+      context: app/ui            
+      dockerfile: Dockerfile
     ports:
       - "8501:8501"
-    depends_on:
-      - api
+    volumes:
+      - ./models:/app/models 
