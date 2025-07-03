@@ -1,0 +1,26 @@
+===== INFORMAÇÕES DO MODELO =====
+Modelo: Random Forest
+Data de treinamento: 2025-07-02 23:22:17
+
+Métricas de desempenho:
+  acuracia: 0.8495
+  precisao: 0.8659
+  recall: 0.8273
+  f1: 0.8461
+  auc: 0.9197
+
+CV AUC: 0.9169 (±0.0010)
+Tempo de execução: 5.22 segundos
+
+Melhores hiperparâmetros:
+  modelo__n_estimators: 50
+  modelo__min_samples_split: 2
+  modelo__min_samples_leaf: 1
+  modelo__max_depth: 10
+
+Run ID MLflow: e92e254aaf8a48c6af9c3c50644005fe
+
+Distribuição das classes:
+  Classe 0 (Não Extinto): 44746
+  Classe 1 (Extinto): 44746
+  Proporção de extinção: 0.5000

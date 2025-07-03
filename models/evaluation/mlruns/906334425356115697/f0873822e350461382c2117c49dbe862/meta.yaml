@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/f0873822e350461382c2117c49dbe862/artifacts
+end_time: 1751506370283
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: f0873822e350461382c2117c49dbe862
+run_name: KNN
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751506304788
+status: 3
+tags: []
+user_id: willemromao

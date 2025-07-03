@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-07522bc24e5d46acab8d32e1a36339bb/artifacts
+creation_timestamp: 1751509325245
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1751509326895
+model_id: m-07522bc24e5d46acab8d32e1a36339bb
+model_type: null
+name: modelo_svm
+source_run_id: 359aa82323274cb7bf35654da81131b1
+status: 2
+status_message: null

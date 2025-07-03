@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/dc97868adeae4c53b277fe45914bc6ba/artifacts
+end_time: 1751506373127
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: dc97868adeae4c53b277fe45914bc6ba
+run_name: Naive Bayes
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751506370465
+status: 3
+tags: []
+user_id: willemromao

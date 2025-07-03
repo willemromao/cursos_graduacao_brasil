@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-807895ff5b27487d9afeecae39b8c90e/artifacts
+creation_timestamp: 1751506427579
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1751506429730
+model_id: m-807895ff5b27487d9afeecae39b8c90e
+model_type: null
+name: modelo_mlp
+source_run_id: 3d8e51daf8774472acbd8fdd9c406db6
+status: 2
+status_message: null

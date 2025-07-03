@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-503b359294e445168ec2ed2075a88445/artifacts
+creation_timestamp: 1751509335824
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1751509337518
+model_id: m-503b359294e445168ec2ed2075a88445
+model_type: null
+name: modelo_xgboost
+source_run_id: a932c28479e34021bd4bced23d0941f7
+status: 2
+status_message: null
