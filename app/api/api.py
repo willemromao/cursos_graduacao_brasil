@@ -7,24 +7,21 @@ import pandas as pd
 import uvicorn
 from pathlib import Path
 
-# Caminhos do modelo e preprocessor
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "models/trained/best_model_random_forest.joblib"
 PREPROCESSOR_PATH = BASE_DIR / "models/pipelines/preprocessor.pkl"
 
-# Inicializar FastAPI
 app = FastAPI(
     title="API de Previsão de Extinção de Cursos",
-    description="API para previsão da extinção de cursos de graduação usando Random Forest",
+    description="API para previsão da extinção de cursos de graduação no Brasil usando Random Forest",
     version="2.0.0"
 )
 
-# Carregar modelo e preprocessor
 try:
     model = joblib.load(MODEL_PATH)
     with open(PREPROCESSOR_PATH, "rb") as f:
         preprocessor = pickle.load(f)
-
+    
     # pré-compute máscara para remover todas as colunas de EXTINTO após o transform
     feature_names = preprocessor.get_feature_names_out()
     extinto_mask = ['EXTINTO' not in name for name in feature_names]
@@ -35,7 +32,6 @@ except Exception as e:
     preprocessor = None
     extinto_mask = None
 
-# Modelo de entrada
 class CourseInput(BaseModel):
     GRAU: str = Field(..., example="Tecnológico")
     MODALIDADE: str = Field(..., example="Educação a Distância")
@@ -45,7 +41,6 @@ class CourseInput(BaseModel):
     QT_VAGAS_AUTORIZADAS: str = Field(..., example="101-200")
     CARGA_HORARIA: str = Field(..., example="2001-3000h")
 
-# Modelo de resposta
 class ExtinctionPrediction(BaseModel):
     extincao_predita: str
     probabilidade: float
@@ -88,14 +83,14 @@ async def predict(course: CourseInput):
         )
 
     try:
-        # Cria o DataFrame com os dados de entrada
         input_df = pd.DataFrame([course.dict()])
 
         # Mantém o dummy 'EXTINTO' apenas para satisfazer o preprocessor
         input_df["EXTINTO"] = "Não"
 
         # Aplica o pré-processamento
-        transformed = preprocessor.transform(input_df)
+        transformed_df = pd.DataFrame(transformed, columns=feature_names)
+        X_for_model = transformed_df.loc[:, extinto_mask]
 
         # Remove todas as colunas geradas para EXTINTO antes de alimentar o modelo
         X_for_model = transformed[:, extinto_mask]
