@@ -74,14 +74,17 @@ if submitted:
             resp = requests.post("http://api:8000/predict", json=input_data, timeout=5)
             resp.raise_for_status()
             result = resp.json()
-            label = result["extincao_predita"]
-            prob = result["probabilidade"]
+            
+            prediction = result["predicao"]
+            probability = result["probabilidade"]
+            status = result["status"]
+            
         except Exception as e:
             st.error(f"⚠️ Erro ao obter previsão: {e}")
         else:
-            if label == "Sim" and prob > 0.6:
-                st.warning("🚨 Atenção: alto risco de extinção!")
-            elif label == "Sim":
-                st.info("⚠️ Risco moderado de extinção.")
+            if prediction == 1 and probability > 0.6:
+                st.warning(f"🚨 {status} (probabilidade: {probability:.1%})")
+            elif prediction == 1:
+                st.info(f"⚠️ {status} (probabilidade: {probability:.1%})")
             else:
-                st.success("✅ Baixo risco de extinção.")
+                st.success(f"✅ {status} (probabilidade: {probability:.1%})")

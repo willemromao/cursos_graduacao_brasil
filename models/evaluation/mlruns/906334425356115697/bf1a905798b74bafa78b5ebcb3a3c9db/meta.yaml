@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/bf1a905798b74bafa78b5ebcb3a3c9db/artifacts
+end_time: 1751687620681
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: bf1a905798b74bafa78b5ebcb3a3c9db
+run_name: MLP
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751687568734
+status: 3
+tags: []
+user_id: willemromao

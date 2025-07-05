@@ -16,7 +16,7 @@ is_signature_from_type_hint: false
 mlflow_version: 3.1.1
 model_id: null
 model_size_bytes: 3767974
-model_uuid: d6d0a6c3c3b84fa7b6de65a1d1a7f509
+model_uuid: 303a5e23df124b529d657e9cb4e80d1a
 prompts: null
 saved_input_example_info:
   artifact_path: input_example.json
@@ -44,7 +44,7 @@ signature:
     "required": true}, {"type": "double", "name": "REGIAO_SUL", "required": true},
     {"type": "double", "name": "QT_VAGAS_AUTORIZADAS", "required": true}, {"type":
     "double", "name": "CARGA_HORARIA", "required": true}]'
-  outputs: '[{"type": "long", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2025-07-03 20:55:26.750424'
+utc_time_created: '2025-07-05 04:00:07.291380'
