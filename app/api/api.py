@@ -91,7 +91,6 @@ class CourseInput(BaseModel):
 class PredictionOutput(BaseModel):
     predicao: int
     probabilidade: float
-    status: str
 
 
 # Configurar caminhos para arquivos
@@ -128,14 +127,10 @@ def preprocess_input(input_data: Dict[str, Any]) -> pd.DataFrame:
         # Aplicar o preprocessador
         X_transformed = preprocessor.transform(df)
         
-        # Obter forma do dado transformado
-        print(f"Shape do dado transformado: {X_transformed.shape}")
-        
         # Se o dado transformado tiver 21 colunas, mas o modelo espera 20, remover a última coluna
         if X_transformed.shape[1] == 21:
             # Remover última coluna (que é a coluna EXTINTO processada)
             X_transformed = X_transformed[:, :-1]
-            print(f"Reduzindo para {X_transformed.shape[1]} colunas")
         
         # Obter o último estimar para recuperar os nomes das features
         if hasattr(model, 'steps'):
@@ -196,23 +191,19 @@ def predict(course: CourseInput):
     Faz uma predição sobre extinção de curso com base nas informações fornecidas.
     """
     try:
-        start_time = time.time()
-        
+
         course_data = course.model_dump()
         
         processed_data = preprocess_input(course_data)
         
         prediction = int(model.predict(processed_data)[0])
         probability = float(model.predict_proba(processed_data)[0][1])
-        
-        status = "Em risco de extinção" if prediction == 1 else "Baixo risco de extinção"
-        
-        print(f"Predição: {prediction} | Prob: {probability:.4f} | Tempo: {time.time() - start_time:.4f}s")
+                
+        print(f"Predição: {prediction} | Prob: {probability:.2f}")
         
         return {
             "predicao": prediction,
-            "probabilidade": round(probability, 4),
-            "status": status
+            "probabilidade": round(probability, 2)
         }
     
     except Exception as e:

@@ -25,7 +25,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="title-container">🏛️ ANÁLISE DE RISCO DE EXTINÇÃO DE CURSO 🏛️</div>', unsafe_allow_html=True)
-st.markdown('<div class="instructions">Preencha os parâmetros abaixo e clique em <strong>Obter Previsão</strong>.</div>', unsafe_allow_html=True)
+st.markdown('<div class="instructions">Preencha os parâmetros abaixo e clique em <strong>Obter Previsão</strong></div>', unsafe_allow_html=True)
 
 grau = st.selectbox("🎓 Grau", ["Bacharelado", "Licenciatura", "Tecnológico"])
 
@@ -77,14 +77,13 @@ if submitted:
             
             prediction = result["predicao"]
             probability = result["probabilidade"]
-            status = result["status"]
             
         except Exception as e:
             st.error(f"⚠️ Erro ao obter previsão: {e}")
         else:
-            if prediction == 1 and probability > 0.6:
-                st.warning(f"🚨 {status} (probabilidade: {probability:.1%})")
-            elif prediction == 1:
-                st.info(f"⚠️ {status} (probabilidade: {probability:.1%})")
+            if prediction == 1 and probability > 0.8:
+                st.warning(f"🚨 Alto risco de extinção")
+            elif prediction == 1 and probability > 0.6:
+                st.info(f"⚠️ Médio risco de extinção")
             else:
-                st.success(f"✅ {status} (probabilidade: {probability:.1%})")
+                st.success(f"✅ Baixo risco de extinção")
