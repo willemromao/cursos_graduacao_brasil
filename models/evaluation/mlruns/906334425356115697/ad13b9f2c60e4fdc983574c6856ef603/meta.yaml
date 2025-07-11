@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/ad13b9f2c60e4fdc983574c6856ef603/artifacts
+end_time: 1752200797556
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: ad13b9f2c60e4fdc983574c6856ef603
+run_name: Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752200793855
+status: 3
+tags: []
+user_id: willemromao

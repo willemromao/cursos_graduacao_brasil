@@ -1,11 +1,11 @@
 # Cursos de Graduação no Brasil 
 
-<img src="/imgs/MECAssinatura.png" alt="Logo MEC" width="475" height="175">
+<img src="/docs/images/MECAssinatura.png" alt="Logo MEC" width="475" height="175">
 
 
 ## Resumo
 
-Este projeto apresenta os resultados das análises e do modelo feito a partir de dados relacionado aos cursos de graduação no Brasil. Para as análises, a descoberta mais impactante foi que, organizações acadêmicas de categoria administrativa privada sem fins lucrativos tem uma proporção maior de cursos extintos e em processo de extinção. Já para o modelo que classifica extinção de cursos, dos três algoritmos testados (Árvore de Decisão, Florestas Aleatórias e Perceptron de Múltiplas Camadas), o que melhor performou foi o Florestas Aleatórias com 81% de acurácia.
+Este projeto apresenta os resultados do modelo treinado a partir de dados relacionado aos cursos de graduação no Brasil afim de prever a extinção de cursos. Dos oito algoritmos testados (KNN, Naive Bayes, MLP, Logistic Regression, SVM, Random Forest e XGBoost), o que melhor performou foi o Random Forest com acurácia e F1-score de 85%.
 
 ## Arquivos
 

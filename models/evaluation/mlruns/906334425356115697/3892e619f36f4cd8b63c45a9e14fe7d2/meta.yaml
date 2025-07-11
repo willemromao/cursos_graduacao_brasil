@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/3892e619f36f4cd8b63c45a9e14fe7d2/artifacts
+end_time: 1752202854414
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: 3892e619f36f4cd8b63c45a9e14fe7d2
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752202851079
+status: 3
+tags: []
+user_id: willemromao

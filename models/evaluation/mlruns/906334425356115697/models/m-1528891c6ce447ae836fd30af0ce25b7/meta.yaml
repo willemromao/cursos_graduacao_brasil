@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-1528891c6ce447ae836fd30af0ce25b7/artifacts
+creation_timestamp: 1752200663230
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1752200667557
+model_id: m-1528891c6ce447ae836fd30af0ce25b7
+model_type: null
+name: modelo_decision_tree
+source_run_id: 7bf8a7fc0f4444db8c10f4fa35cd45c7
+status: 2
+status_message: null

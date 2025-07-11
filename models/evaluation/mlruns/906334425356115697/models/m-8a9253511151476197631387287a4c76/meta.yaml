@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-8a9253511151476197631387287a4c76/artifacts
+creation_timestamp: 1752200737445
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1752200739521
+model_id: m-8a9253511151476197631387287a4c76
+model_type: null
+name: modelo_naive_bayes
+source_run_id: c6c6c0d00e6f45e7a2066b11bbe8ec3e
+status: 2
+status_message: null

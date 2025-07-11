@@ -1,0 +1,14 @@
+artifact_uri: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/7bf8a7fc0f4444db8c10f4fa35cd45c7/artifacts
+end_time: 1752200667561
+entry_point_name: ''
+experiment_id: '906334425356115697'
+lifecycle_stage: active
+run_id: 7bf8a7fc0f4444db8c10f4fa35cd45c7
+run_name: Decision Tree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752200660283
+status: 3
+tags: []
+user_id: willemromao

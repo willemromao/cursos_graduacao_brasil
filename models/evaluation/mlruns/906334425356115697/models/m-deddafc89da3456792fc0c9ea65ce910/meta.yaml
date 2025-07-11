@@ -1,0 +1,10 @@
+artifact_location: file:///home/willemromao/Downloads/TI/projetos_graduacao/ciencia_de_dados/cursos_graduacao_brasil/models/evaluation/mlruns/906334425356115697/models/m-deddafc89da3456792fc0c9ea65ce910/artifacts
+creation_timestamp: 1752200795565
+experiment_id: '906334425356115697'
+last_updated_timestamp: 1752200797554
+model_id: m-deddafc89da3456792fc0c9ea65ce910
+model_type: null
+name: modelo_logistic_regression
+source_run_id: ad13b9f2c60e4fdc983574c6856ef603
+status: 2
+status_message: null
