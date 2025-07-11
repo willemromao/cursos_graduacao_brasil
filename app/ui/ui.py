@@ -25,7 +25,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="title-container">🏛️ ANÁLISE DE RISCO DE EXTINÇÃO DE CURSO 🏛️</div>', unsafe_allow_html=True)
-st.markdown('<div class="instructions">Preencha os parâmetros abaixo e clique em <strong>Obter Previsão</strong></div>', unsafe_allow_html=True)
+st.markdown('<div class="instructions">Preencha o formulário abaixo e clique em <strong>Obter Previsão</strong></div>', unsafe_allow_html=True)
 
 grau = st.selectbox("🎓 Grau", ["Bacharelado", "Licenciatura", "Tecnológico"])
 
@@ -56,7 +56,7 @@ carga = st.selectbox(
      "3001-4000h", "4001-5000h", "Mais de 5000h"]
 )
 
-submitted = st.button("🚀 Obter Previsão")
+submitted = st.button("🧠 Obter Previsão")
 
 if submitted:
     input_data = {
