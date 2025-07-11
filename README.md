@@ -58,12 +58,12 @@ https:\\localhost:8501
 
 ## :construction: Futuras features
 
-- Criar CI/CD.
+Criar CI/CD.
 
 
-## :busts_in_silhouette: Autores e Contribuidores
+## :busts_in_silhouette: Contribuidores
 
-- [Francisco Willem R. Moreira](https://github.com/willemromao) - Machine Learning Engineer
+[Francisco Willem R. Moreira](https://github.com/willemromao) - Machine Learning Engineer
 
 
 ## :balance_scale: Licença
