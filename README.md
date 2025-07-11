@@ -3,16 +3,16 @@
 <img src="/docs/images/mec.png" alt="Logo MEC" width="475" height="175">
 
 
-## Resumo
+## :mag: Resumo
 
-Utilizando dados abertos do MEC, através de técnicas de ciência de dados e aprendizado de máquina, foi desenvolvido um modelo preditivo que identifica se um determinado curso têm uma alta probabilidade de ser extinto. Dos oito algoritmos testados (KNN, Naive Bayes, MLP, Logistic Regression, SVM, Random Forest e XGBoost), o Random Forest apresentou o melhor desempenho com acurácia e F1-score de 85%. Os resultados deste projeto podem auxiliar instituições de ensino superior e órgãos governamentais na tomada de decisões estratégicas sobre a oferta de cursos.
+Utilizando dados abertos do MEC através de técnicas de ciência de dados e aprendizado de máquina, foi desenvolvido um modelo preditivo que identifica se um determinado curso têm probabilidade de ser extinto. Dos oito algoritmos testados (KNN, Naive Bayes, MLP, Logistic Regression, SVM, Random Forest e XGBoost), o Random Forest apresentou o melhor desempenho com acurácia e F1-score de 85%. Os resultados deste projeto podem auxiliar instituições de ensino superior e órgãos governamentais na tomada de decisões estratégicas sobre a oferta de cursos.
 
 
-## Arquivos
+## :file_folder: Arquivos
 
  - :game_die: [**Dataset**](https://dadosabertos.mec.gov.br/indicadores-sobre-ensino-superior/item/183-cursos-de-graduacao-do-brasil)
 
-- :orange_book: **Notebooks:**
+- :orange_book: **Notebooks**
     - [Análise Exploratória e Limpeza](/notebooks/01_exploratory_data_analysis_and_cleaning.ipynb)
     - [Pré-processamento](/notebooks/02_data_preprocessing.ipynb)
     - [Treinamento](/notebooks/03_model_training.ipynb)
@@ -22,7 +22,7 @@ Utilizando dados abertos do MEC, através de técnicas de ciência de dados e ap
 - :tv: [**Apresentação**](/docs/)
 
 
-## Tecnologias Utilizadas
+## :gear: Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.12
 - **Bibliotecas de Análise de Dados:** Pandas, NumPy
@@ -51,21 +51,25 @@ docker compose up --build
 https:\\localhost:8501
 ```
 
-<img src="/docs/images/tela_1.png" alt="Tela 1" width="700" height="350">
+<img src="/docs/images/tela_1.png" alt="Tela 1" width="700" height="400">
 
-<img src="/docs/images/tela_2.png" alt="Tela 2" width="700" height="350">
+<img src="/docs/images/tela_2.png" alt="Tela 2" width="700" height="400">
 
 
-## Futuras features
+## :construction: Futuras features
 
 - Criar CI/CD.
 
 
-## Autores e Contribuidores
+## :busts_in_silhouette: Autores e Contribuidores
 
 - [Francisco Willem R. Moreira](https://github.com/willemromao) - Machine Learning Engineer
 
 
-## Licença
+## :balance_scale: Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto está licenciado sob a [MIT License](/LICENCE).
+
+## :mailbox: Contato
+
+*franciscowillem@gmail.com*
