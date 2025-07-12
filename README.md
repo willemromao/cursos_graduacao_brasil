@@ -19,7 +19,7 @@ Utilizando dados abertos do MEC através de técnicas de ciência de dados e apr
 
 - :page_facing_up: [**Relatório**](/docs/)
 
-- :tv: [**Apresentação**](/docs/)
+- :tv: [**Apresentação**](/docs/aresentação.pdf)
 
 
 ## :gear: Tecnologias Utilizadas
