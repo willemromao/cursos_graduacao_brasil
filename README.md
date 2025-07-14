@@ -17,7 +17,7 @@ Utilizando dados abertos do MEC através de técnicas de ciência de dados e apr
     - [Pré-processamento](/notebooks/02_data_preprocessing.ipynb)
     - [Treinamento](/notebooks/03_model_training.ipynb)
 
-- :page_facing_up: [**Relatório**](/docs/)
+- :page_facing_up: [**Relatório**](/docs/relatorio.pdf)
 
 - :tv: [**Apresentação**](/docs/apresentacao.pdf)
 
